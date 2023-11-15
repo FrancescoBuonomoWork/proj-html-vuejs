@@ -2,6 +2,7 @@
 export default{
     props:{
         navItem:Array,
+        socials:Array,
     },
     data(){
         return{
@@ -17,17 +18,24 @@ export default{
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 header">
-                    <p>Logo</p>
+                    <a href="#"><img class="logo" src="../assets/logo.svg"></a>
                     <nav >
-                        <ul class="nav-link">
+                        <ul class="nav-link text-style">
                             <li v-for="elem in navItem"><a href="#">{{ elem.toUpperCase() }}</a></li>
                         </ul>
                     </nav>
 
                     <div class="icon-wrapper">
-                        <p>cerca </p>
-                        <ul class="nav-link">
-                            <li v-for="n in 4"><a href="#">Social</a></li>
+                            <a  href="#">
+                                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                            </a>
+                
+                        <ul class="nav-link nav-social">
+                            <li v-for="social in socials">
+                                <a :href=social.link>
+                                <font-awesome-icon :icon="social.icon" />
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -45,14 +53,32 @@ export default{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 32px ;
 
+    .logo{
+        width: 200px;
+    }
     .nav-link{
         display: flex;
         gap: 18px;
     }
+    .text-style{
+        font-weight: 700;
+        font-size: 12px;
+
+    }
+
     .icon-wrapper{
         display: flex;
         gap: 10px;
+    }
+    .nav-social::before{
+        content: '';
+        width: 4px;
+        height: 10px;
+        color: $gray;
+        display: block;
+
     }
 }
 </style>

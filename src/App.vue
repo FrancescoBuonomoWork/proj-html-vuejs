@@ -12,7 +12,25 @@ export default{
   },
   data(){
         return{
-          navItem:['home','blog','pages','about','contacts','gallery','shop']
+          navItem:['home','blog','pages','about','contacts','gallery','shop'],
+          iconListLink: [
+                {
+                    link: '#',
+                    icon: ['fab', 'facebook']
+                },
+                {
+                    link: '#',
+                    icon: ['fab', 'twitter']
+                },
+                {
+                    link: '#',
+                    icon: ['fab', 'youtube']
+                },
+                {
+                    link: '#',
+                    icon: ['fab','instagram' ]
+                }
+            ]
         }
     }
 }
@@ -20,7 +38,7 @@ export default{
 
 <template>
 
-  <PageHeader :navItem="navItem"/>
+  <PageHeader :navItem="navItem" :socials="iconListLink"/>
  
 </template>
 
