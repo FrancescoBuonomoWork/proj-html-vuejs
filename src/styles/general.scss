@@ -52,9 +52,15 @@ figure>img {
 .col-4{
     flex-basis: calc(100% / 12)* 4;
 }
+.col-6 {
+    flex-basis: 50%;
+}
 // utility
 .flex{
     display: flex;
+}
+.flex-end{
+  justify-content: flex-end;
 }
 // BUTTON
 .button{
@@ -72,8 +78,13 @@ figure>img {
     font-weight: 100;
     text-transform: uppercase;
 }
-.title{
+.title-maxi{
     font-size: $TITLE;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.title{
+    font-size: 46px;
     text-transform: uppercase;
     font-weight: 700;
 }

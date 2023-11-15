@@ -37,6 +37,7 @@ export default{
     }
     .card-text{
       text-align: center;
+      line-height: 1.5em;
     }
     .card-img, .card-text__title{
         margin-bottom: 10px;

@@ -1,10 +1,12 @@
 <script>
 import HeroSection from './HeroSection.vue';
 import InfoSection from './InfoSection.vue';
+import AboutUsSection from './AboutUsSection.vue';
 export default{
     components: {
         HeroSection,
-        InfoSection
+        InfoSection,
+        AboutUsSection,
     }
 }
 </script>
@@ -12,6 +14,7 @@ export default{
 <template>
     <HeroSection/>
     <InfoSection/>
+    <AboutUsSection/>
 
  
 </template>

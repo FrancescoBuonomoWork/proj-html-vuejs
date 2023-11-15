@@ -28,7 +28,7 @@ export default{
             <div class="row">
                 <div class="col hero-text-wrapper">
                     <p class="subtitle">Cinemato studio</p>
-                    <h2 class="title">Action and <br> inspire people</h2>
+                    <h2 class="title-maxi">Action and <br> inspire people</h2>
                     <a href="#" class="button">Read more</a>
                 </div>
             </div>
@@ -47,7 +47,7 @@ export default{
     width: 10px;
 }
 .hero-img{
-    height: 600px;
+    height: 700px;
     object-fit: cover;
 }
 .hero-carousel-wrapper{
