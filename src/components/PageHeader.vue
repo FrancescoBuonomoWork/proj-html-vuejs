@@ -1,5 +1,8 @@
 <script>
 export default{
+    props:{
+        navItem:Array,
+    },
     data(){
         return{
 
@@ -17,7 +20,7 @@ export default{
                     <p>Logo</p>
                     <nav >
                         <ul class="nav-link">
-                            <li v-for="n in 7"><a href="#">Home</a></li>
+                            <li v-for="elem in navItem"><a href="#">{{ elem.toUpperCase() }}</a></li>
                         </ul>
                     </nav>
 

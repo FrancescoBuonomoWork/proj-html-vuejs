@@ -9,13 +9,18 @@ export default{
     PageHeader,
     PageMain,
     PageFooter,
-  }
+  },
+  data(){
+        return{
+          navItem:['home','blog','pages','about','contacts','gallery','shop']
+        }
+    }
 }
 </script>
 
 <template>
 
-  <PageHeader/>
+  <PageHeader :navItem="navItem"/>
  
 </template>
 
