@@ -1,10 +1,15 @@
 <script>
+import HeroSection from './HeroSection.vue';
 export default{
-    
+    components: {
+        HeroSection,
+    }
 }
 </script>
 
 <template>
+    <HeroSection/>
+
  
 </template>
 

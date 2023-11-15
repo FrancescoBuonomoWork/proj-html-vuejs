@@ -39,6 +39,7 @@ export default{
 <template>
 
   <PageHeader :navItem="navItem" :socials="iconListLink"/>
+  <PageMain/>
  
 </template>
 
