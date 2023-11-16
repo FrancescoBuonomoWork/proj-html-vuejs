@@ -49,6 +49,9 @@ figure>img {
 .col-12{
     flex-basis: 100%;
 }
+.col-3{
+    flex-basis: calc(100% / 12)* 3;
+}
 .col-4{
     flex-basis: calc(100% / 12)* 4;
 }
