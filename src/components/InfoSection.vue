@@ -46,7 +46,7 @@ export default{
     <section class="info section-pad-100">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-al-center">
+                <div class="col-12 intro">
                     <p class="subtitle">Pelicula studio</p>
                     <h2 class="title">This is what we do</h2>
                 </div>

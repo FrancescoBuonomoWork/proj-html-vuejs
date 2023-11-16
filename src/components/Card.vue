@@ -15,6 +15,7 @@ export default{
             <img  :src="elem.imgSRC">
         </div>
         <div class="card-text">
+            <p class="card-date" v-show="elem.date">{{ elem.date }}</p>
             <h4 class="card-text__title">{{elem.title}}</h4>
             <p class="card-text__description">{{elem.text}}</p>
         </div>
@@ -24,6 +25,10 @@ export default{
 
 <style scoped lang="scss">
 @use '../styles/partials/variables' as *;
+.latest-news .card .card-text{
+        text-align: start;
+    }
+
 .watchlist-section .card-text__description{
     color: $gray;
 }
@@ -49,6 +54,10 @@ export default{
     .card-text{
       text-align: center;
       line-height: 1.5em;
+      .card-date{
+        color: $gray;
+        margin-bottom: 5px;
+      }
     }
     .card-img, .card-text__title{
         margin-bottom: 10px;
