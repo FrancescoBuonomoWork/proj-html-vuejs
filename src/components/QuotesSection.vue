@@ -44,8 +44,9 @@ export default {
 .quotes-section {
     color: $white;
     background-image: url(../assets/Parallax-02.jpg);
-    height: 550px;
-    background-position: 0 150px;
+    height: 600px;
+    background-position: 0 240px;
+    background-size: cover;
 
     .quotes-wrapper {
         display: flex;

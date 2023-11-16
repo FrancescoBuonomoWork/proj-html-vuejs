@@ -28,6 +28,7 @@ export default{
 .about-us{
     color: $white;
     height: 550px;
+    background-size: cover;
    
     background-image: url(../assets/About-Us.jpg);
     .text-wrapper{

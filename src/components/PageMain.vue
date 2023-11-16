@@ -7,6 +7,7 @@ import RatingSection from './RatingSection.vue';
 import OurTeam from './OurTeam.vue';
 import QuotesSection from './QuotesSection.vue';
 import LatestNewsSection from './LatestNewsSection.vue';
+import GraficSection from './GraficSection.vue';
 export default{
     components: {
         HeroSection,
@@ -17,6 +18,7 @@ export default{
         OurTeam,
         QuotesSection,
         LatestNewsSection,
+        GraficSection,
     }
 }
 </script>
@@ -30,6 +32,7 @@ export default{
     <OurTeam/>
     <QuotesSection/>
     <LatestNewsSection/>
+    <GraficSection/>
     
 
  
