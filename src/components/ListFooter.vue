@@ -26,7 +26,7 @@ export default{
 <template>
     <h6 class="subtitle">{{ footerMenuItem.title }}</h6>
     <ul class="list">
-        <li class="gap-10 " v-for="element in footerMenuItem.listItems">
+        <li class="gap-10 list-item " v-for="element in footerMenuItem.listItems">
             <span>
                 <font-awesome-icon v-show="element.icon" :icon="['fas', element.icon ? element.icon : '' ]" />
             </span>
@@ -53,6 +53,13 @@ export default{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    .list-item{
+        color: $gray;
+        &:hover{
+            color: $white;
+        }
+
+    }
 
 }
 .input{
