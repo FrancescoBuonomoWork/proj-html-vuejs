@@ -65,6 +65,8 @@ export default{
     color: $black;
     background-color: $white;
     padding-top: 50px;
+   
 }
+
 
 </style>

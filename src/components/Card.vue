@@ -23,14 +23,21 @@ export default{
 </template>
 
 <style scoped lang="scss">
+.info .card img{
+    width: 100px;
+    
+}
+.info .card-img{
+    height: 170px;
+
+}
+
 .card{
-    margin: 20px 30px;
+    margin: 20px 20px;
     height: 100%;
-    img {
-        width: 100px;
-    }
+
+   
     .card-img{
-        height: 170px;
         display: flex;
         justify-content: center;
         align-items: center;
