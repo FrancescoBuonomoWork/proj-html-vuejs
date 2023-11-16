@@ -4,6 +4,7 @@ import InfoSection from './InfoSection.vue';
 import AboutUsSection from './AboutUsSection.vue';
 import WatchlistSection from './WatchlistSection.vue';
 import RatingSection from './RatingSection.vue';
+import OurTeam from './OurTeam.vue';
 export default{
     components: {
         HeroSection,
@@ -11,6 +12,7 @@ export default{
         AboutUsSection,
         WatchlistSection,
         RatingSection,
+        OurTeam,
     }
 }
 </script>
@@ -21,6 +23,7 @@ export default{
     <AboutUsSection/>
     <WatchlistSection/>
     <RatingSection/>
+    <OurTeam/>
     
 
  

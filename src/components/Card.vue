@@ -56,6 +56,9 @@ export default{
     .card-text__title{
         text-transform: uppercase;
     }
+    .card-text__description{
+        color: $gray;
+    }
 }
 
 </style>

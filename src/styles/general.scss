@@ -98,3 +98,11 @@ figure>img {
 .section-pad-100{
     padding: 100px 0;
 }
+
+.intro{
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
