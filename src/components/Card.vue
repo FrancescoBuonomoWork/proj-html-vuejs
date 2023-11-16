@@ -23,6 +23,10 @@ export default{
 </template>
 
 <style scoped lang="scss">
+@use '../styles/partials/variables' as *;
+.watchlist-section .card-text__description{
+    color: $gray;
+}
 .info .card img{
     width: 100px;
     

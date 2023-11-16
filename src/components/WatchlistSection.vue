@@ -12,28 +12,28 @@ export default {
                 },
                 {
                     imgSRC:'src/assets/Gallery-02.jpg',
-                    title: 'Seventeenth summer',
-                    text: 'Commercial, Music Video'
+                    title: 'A message to space',
+                    text: 'Short Film'
                 },
                 {
                     imgSRC:'src/assets/Gallery-03.jpg',
-                    title: 'Seventeenth summer',
-                    text: 'Commercial, Music Video'
+                    title: 'The most beautiful thing',
+                    text: 'Music Video'
                 },
                 {
                     imgSRC:'src/assets/Gallery-04.jpg',
-                    title: 'Seventeenth summer',
-                    text: 'Commercial, Music Video'
+                    title: 'Permission To Speak',
+                    text: 'Documentary'
                 },
                 {
                     imgSRC:'src/assets/Gallery-05.jpg',
-                    title: 'Seventeenth summer',
-                    text: 'Commercial, Music Video'
+                    title: 'Explore our space',
+                    text: 'Film noir'
                 },
                 {
                     imgSRC:'src/assets/Gallery-06.jpg',
-                    title: 'Seventeenth summer',
-                    text: 'Commercial, Music Video'
+                    title: 'Film production',
+                    text: 'Blaxplaitation'
                 },
             ]
         }
@@ -82,6 +82,6 @@ export default {
         flex-direction: column;
         gap: 25px;
     }
-   
+  
 }
 </style>
