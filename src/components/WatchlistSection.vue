@@ -82,8 +82,6 @@ export default {
         flex-direction: column;
         gap: 25px;
     }
-    .card img {
-
-    }
+   
 }
 </style>

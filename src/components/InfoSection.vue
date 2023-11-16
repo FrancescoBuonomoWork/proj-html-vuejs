@@ -43,7 +43,7 @@ export default{
 </script>
 
 <template>
-    <section class="info">
+    <section class="info section-pad-100">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-al-center">
@@ -64,7 +64,6 @@ export default{
 .info{
     color: $black;
     background-color: $white;
-    padding-top: 50px;
    
 }
 
