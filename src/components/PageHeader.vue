@@ -74,9 +74,9 @@ export default{
     }
     .nav-social::before{
         content: '';
-        width: 4px;
-        height: 10px;
-        color: $gray;
+        width: 1px;
+        height: 100%;
+        background-color: $light-gray;
         display: block;
 
     }

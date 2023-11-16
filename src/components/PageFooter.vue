@@ -114,8 +114,14 @@ export default {
                     <ListFooter :footerMenuItem="element" />
 
                 </div>
+                <div class="col-12">
+                    <span>
+                        2023 All Right Reserved. Developed By TemplateMela
+                    </span>
+                </div>
             </div>
         </div>
+        
     </footer>
 </template>
 
@@ -130,5 +136,17 @@ export default {
         display: flex;
         gap: 10px;
     }
+    .col-12{
+        margin-top: 100px;
+        text-align: center;
+    }
+    .col-12::before {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: $gray;
+            display: block;
+            margin-bottom: 20px;
+        }
 }
 </style>
