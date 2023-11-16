@@ -56,7 +56,7 @@ export default{
 .arrow{
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.618);
+    background-color: rgba(255, 255, 255, 0.618);
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -64,7 +64,7 @@ export default{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $white;
+    filter: invert(100%);
 }
 .arrow-right{
     right: 20px;
