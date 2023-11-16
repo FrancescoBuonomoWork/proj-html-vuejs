@@ -66,6 +66,10 @@ figure>img {
 .flex{
     display: flex;
 }
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
 .flex-end{
   justify-content: flex-end;
 }
@@ -78,6 +82,10 @@ figure>img {
     color: $black;
     padding: 15px;
 
+}
+.button-black{
+    background-color: $black;
+    color: $white;
 }
 // text 
 .subtitle{
