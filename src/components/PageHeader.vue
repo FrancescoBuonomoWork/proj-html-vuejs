@@ -12,13 +12,21 @@ export default{
         }
     },
     methods:{
-        toggleDropDown(){
-            console.log('dropdown')
-            if (this.isOpenDropdown ===false){
-                this.isOpenDropdown = true;
+        // toggleDropDown(){
+        //     console.log('dropdown')
+        //     if (this.isOpenDropdown ===false){
+        //         this.isOpenDropdown = true;
 
-            } else{
-                this.isOpenDropdown = false;
+        //     } else{
+        //         this.isOpenDropdown = false;
+        //     }
+        // },
+        toggleDropDown(elem){
+            if(elem.visibility === true){
+                console.log(elem.visibility)
+                return elem.visibility = false
+            } else {
+                return elem.visibility = true
             }
         }
     }
@@ -34,12 +42,13 @@ export default{
                     <a href="#"><img class="logo" src="../assets/logo.svg"></a>
                     <nav>
                         <ul class="nav-link text-style">
-                            <li class="nav-item" v-for="elem in navItem">
+                            <li class="nav-item" v-for="(elem,i) in navItem">
                                 <a href="#">
                                     {{ elem.title.toUpperCase() }}
                                 </a>
-                                <img v-if="elem.chevon" @click="toggleDropDown()" class="chevon" src="../assets/image (7).svg">
-                                <ul v-show="isOpenDropdown === true" v-if="elem.chevon" class="dropdown">
+                                <img v-if="elem.chevon" @click="toggleDropDown(elem)" class="chevon" src="../assets/image (7).svg">
+
+                                <ul v-show="elem.visibility === true" v-if="elem.chevon" class="dropdown">
                                     <li class="dropdown-item"><a href="#">Services</a></li>
                                     <li class="dropdown-item"><a href="#">Our Work Flow</a></li>
                                     <li class="dropdown-item"><a href="#">Video Thumbnail Type</a></li>
@@ -80,9 +89,11 @@ export default{
     padding: 32px ;
 .nav-item{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
     position: relative;
+
     .chevon{
         width: 12px;
         cursor: pointer;
@@ -100,16 +111,17 @@ export default{
     left: 0;
     z-index: 50;
     width: 230px;
-    padding: 15px 10px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    padding: 15px 10px;
     .dropdown-item::after{
         content: '';
         display: block;
         width: 100%;
         height: 1px;
         background-color: $light-gray;
+        margin: 5px 0;
     }
 }
     .logo{
@@ -128,6 +140,7 @@ export default{
 
     .icon-wrapper{
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
     }
     .nav-social::before{
