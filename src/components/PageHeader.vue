@@ -6,7 +6,20 @@ export default{
     },
     data(){
         return{
+            isOpenDropdown:false,
+            
 
+        }
+    },
+    methods:{
+        toggleDropDown(){
+            console.log('dropdown')
+            if (this.isOpenDropdown ===false){
+                this.isOpenDropdown = true;
+
+            } else{
+                this.isOpenDropdown = false;
+            }
         }
     }
 
@@ -19,9 +32,20 @@ export default{
             <div class="row">
                 <div class="col-12 header">
                     <a href="#"><img class="logo" src="../assets/logo.svg"></a>
-                    <nav >
+                    <nav>
                         <ul class="nav-link text-style">
-                            <li v-for="elem in navItem"><a href="#">{{ elem.toUpperCase() }}</a></li>
+                            <li class="nav-item" v-for="elem in navItem">
+                                <a href="#">
+                                    {{ elem.title.toUpperCase() }}
+                                </a>
+                                <img v-if="elem.chevon" @click="toggleDropDown()" class="chevon" src="../assets/image (7).svg">
+                                <ul v-show="isOpenDropdown === true" v-if="elem.chevon" class="dropdown">
+                                    <li class="dropdown-item"><a href="#">Services</a></li>
+                                    <li class="dropdown-item"><a href="#">Our Work Flow</a></li>
+                                    <li class="dropdown-item"><a href="#">Video Thumbnail Type</a></li>
+                                </ul>
+
+                            </li>
                         </ul>
                     </nav>
 
@@ -54,7 +78,40 @@ export default{
     justify-content: space-between;
     align-items: center;
     padding: 32px ;
-
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    .chevon{
+        width: 12px;
+        cursor: pointer;
+    }
+}
+.dropdown{
+    background-color: $black;
+    color: $white;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    z-index: 50;
+    width: 230px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .dropdown-item::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $light-gray;
+    }
+}
     .logo{
         width: 200px;
     }

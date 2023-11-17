@@ -12,7 +12,7 @@ export default{
   },
   data(){
         return{
-          navItem:['home','blog','pages','about','contacts','gallery','shop'],
+          navItem:[{title:'home'},{title:'blog'},{title:'pages',chevon: 'chevon'},{title:'about'},{title:'contacts'},{title:'gallery'},{title:'shop',chevon:'chevon'}],
           iconListLink: [
                 {
                     link: '#',
