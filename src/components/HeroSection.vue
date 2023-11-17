@@ -15,6 +15,10 @@ export default{
                 {
                    imgSRC:'src/assets/Parallax-02.jpg',
                    active: false
+                },
+                {
+                   imgSRC:'src/assets/Parallax-03.jpg',
+                   active: false
                 }
             ]
         }
