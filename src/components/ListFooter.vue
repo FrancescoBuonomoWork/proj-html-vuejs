@@ -65,6 +65,7 @@ export default{
 .input{
     background-color: #1C1C1C;
     border: none;
+    color: $white;
     padding: 15px 0px;
 }
 
