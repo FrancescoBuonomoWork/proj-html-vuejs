@@ -60,7 +60,8 @@ export default{
     }
     .nav-link{
         display: flex;
-        gap: 18px;
+        flex-wrap: wrap;
+        gap: 40px;
     }
     .text-style{
         font-weight: 700;

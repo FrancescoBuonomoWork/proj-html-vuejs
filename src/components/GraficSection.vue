@@ -39,7 +39,7 @@ export default{
 .grafic-section{
     background-image: url(../assets/Parallax-03.jpg);
     height: 300px;
-    background-position: 0 -250px;
+    background-position: 0 -90px;
     background-size: cover;
     .container{
         height: 100%;

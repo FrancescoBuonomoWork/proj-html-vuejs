@@ -27,8 +27,8 @@ export default{
     <h6 class="subtitle">{{ footerMenuItem.title }}</h6>
     <ul class="list">
         <li class="gap-10 list-item " v-for="element in footerMenuItem.listItems">
-            <span>
-                <font-awesome-icon v-if="element.icon" :icon="['fas', element.icon ? element.icon : '' ]" />
+            <span v-if="element.icon">
+                <font-awesome-icon  :icon="['fas', element.icon ? element.icon : '' ]" />
             </span>
             <span v-if="element.text" >
             {{element.text ? element.text : ''}}
