@@ -28,13 +28,13 @@ export default{
     <ul class="list">
         <li class="gap-10 list-item " v-for="element in footerMenuItem.listItems">
             <span>
-                <font-awesome-icon v-show="element.icon" :icon="['fas', element.icon ? element.icon : '' ]" />
+                <font-awesome-icon v-if="element.icon" :icon="['fas', element.icon ? element.icon : '' ]" />
             </span>
-            <span >
+            <span v-if="element.text" >
             {{element.text ? element.text : ''}}
             </span>
-            <input class="input" v-show="element.placeholder" type="text" placeholder="Enter Your Email">
-            <a v-show="element.button" class="button" href="#">{{ element.button }}</a>
+            <input class="input" v-if="element.placeholder" type="text" placeholder="Enter Your Email">
+            <a v-if="element.button" class="button" href="#">{{ element.button }}</a>
         </li>
     </ul>
  
